@@ -14,7 +14,7 @@ import { MdCancel } from "react-icons/md";
 import Image from "next/image";
 import { filterData, getFilterValues } from "../utils/fetchData";
 
-const searchFilters = () => {
+const SearchFilters = () => {
   const [filters] = useState(filterData);
   const router = useRouter();
 
@@ -58,4 +58,4 @@ const searchFilters = () => {
   );
 };
 
-export default searchFilters;
+export default SearchFilters;
