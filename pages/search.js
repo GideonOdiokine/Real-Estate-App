@@ -8,8 +8,6 @@ import Property from "../components/Property";
 import noresult from "../assets/images/noresult.svg";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 
-
-
 const Search = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
@@ -36,7 +34,7 @@ const Search = ({ properties }) => {
       <Text fontSize="2xl" p="4" fontWeight="bold">
         Properties {router.query.purpose}{" "}
       </Text>
-      <Flex flexWrap="wrap">
+      <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
         {properties.map((property) => (
           <Property property={property} key={property.id} />
         ))}
